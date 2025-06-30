@@ -23,8 +23,7 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run Tests
-        run: |
-          cd ./src
+        run:
           python3 manage.py test
       - name: Update passed icon
         uses: Sibz/github-status-action@v1
