@@ -25,7 +25,6 @@ jobs:
       - name: Run Tests
         run: |
           cd ./src
-          echo "SECRET_KEY = 'django-insecure-dummy-secret'" > ./proj/secrets.py
           python3 manage.py test
       - name: Update passed icon
         uses: Sibz/github-status-action@v1
